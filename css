@@ -1,0 +1,619 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h4 {
+    color: white;
+    font-size: 40px;
+}
+
+p {
+    color: white;
+    font-style: italic;
+    font-size: 20px;
+
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    padding-bottom: 10px;
+}
+
+.logo {
+    margin-left: 60px;
+}
+.header-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation-box ul{
+    display: flex;
+    column-gap: 50px;
+    margin-right: 150px;
+}
+
+.header-box .navigation-box ul li{
+    list-style-type: none;
+}
+
+.header-box .navigation-box ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.header-box .navigation-box ul li a:hover {
+    color: rgb(250, 8, 8);
+}
+
+.header-box .navigation-box label #btn, label #cancel {
+    color: black;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+/* homepage */
+
+.home-page {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    margin: 50px 20px;
+}
+
+.cols1 {
+    background-image: url(left-banner-image.jpg);
+    width: 800px;
+    height: 680px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cols1 h2 {
+    font-size: 64px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.cols1 .para {
+    font-style: italic;
+    color: white;
+    font-size: 30px;
+    padding-bottom: 20px;
+
+}
+
+.cols1 button {
+    background-color: transparent;
+    font-size: 14px;
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.cols1 button:hover {
+    background-color: white;
+    color: black;
+}
+.home-page .cols2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.home-page .cols2 .box-1 {
+    background-image: url(baner-right-image-01.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-page .cols2 .box-2 {
+    background-image: url(baner-right-image-02.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-page .cols2 .box-3 {
+    background-image: url(baner-right-image-03.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-page .cols2 .box-4 {
+    background-image: url(baner-right-image-04.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-page .cols2 .box-1:hover {
+    margin: 20px 20px;
+    background-repeat: no-repeat;
+}
+
+.home-page .cols2 .box-2:hover {
+    margin: 20px 20px;
+    background-repeat: no-repeat;
+}
+
+.home-page .cols2 .box-3:hover {
+    margin: 20px 20px;
+    background-repeat: no-repeat;
+}
+
+.home-page .cols2 .box-4:hover {
+    margin: 20px 20px;
+    background-repeat: no-repeat;
+}
+
+/* Men's section */
+
+.men-collections {
+    padding-bottom: 40px;
+}
+
+.men-new-collections {
+    text-align: center;
+    margin-top: 24px;
+}
+
+.men-new-collections h3{
+    font-size: 44px;
+}
+
+.men-new-collections p{
+    color: rgb(111, 107, 107);
+    padding: 20px;
+}
+
+.cols3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 50px;
+}
+
+.men-product span{
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 118px;
+}
+
+.price {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.men-product h4 {
+    color: rgb(137, 135, 135);
+    font-size: 20px;
+}
+
+.cols3 .men-product:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* women collection */
+
+.women-collections {
+    padding-bottom: 40px;
+}
+
+.women-new-collections {
+    text-align: center;
+    margin-top: 24px;
+}
+
+.women-new-collections h3 {
+    font-size: 44px;
+}
+
+.women-new-collections p {
+    color: rgb(111, 107, 107);
+    padding: 20px;
+}
+
+.stars span {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 118px;
+}
+
+.women-products h4 {
+    color: rgb(137, 135, 135);
+    font-size: 20px;
+}
+
+.cols3 .women-products:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* kids collection */
+
+.kids-collections {
+    padding-bottom: 40px;
+}
+
+.kids-new-collections {
+    text-align: center;
+    margin-top: 24px;
+}
+
+.kids-new-collections h3 {
+    font-size: 44px;
+}
+
+.kids-new-collections p {
+    color: rgb(111, 107, 107);
+    padding: 20px;
+}
+
+.stars span {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 118px;
+}
+
+.kid-products h4 {
+    color: rgb(137, 135, 135);
+    font-size: 20px;
+}
+
+.cols3 .kid-products:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* explore products */
+
+.explore-products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    margin: 100px 60px;
+}
+
+.our-products {
+    background-color: rgb(249, 246, 246);
+}
+
+.explore-products .our-products h5 {
+    font-size: 44px;
+    margin: 20px 0;
+}
+
+.explore-products .our-products p {
+    color: rgb(116, 112, 112);
+    font-style: normal;
+    font-size: 16px;
+    padding: 20px 10px;
+    line-height: 1.7;
+    font-weight: 100;
+}
+
+.our-products .explore-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.explore-products .our-products .para1 {
+    font-style: italic;
+}
+
+.our-products button {
+    background-color: transparent;
+    width: 150px;
+    height: 40px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.our-products button:hover {
+    background-color: black;
+    color: aliceblue;
+}
+
+.cols4{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.cols4 .cols-box-1 h6 {
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.cols4 .cols-box-1 p {
+    font-style: italic;
+    color: rgb(183, 179, 179);
+}
+
+.cols4 .cols-box-4 h6 {
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.cols4 .cols-box-4 p {
+    font-style: italic;
+    color: rgb(183, 179, 179);
+}
+
+.cols-box-1 {
+    background-color: rgb(249, 246, 246);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cols-box-2 {
+    background-image: url(explore-image-01.jpg);
+}
+
+.cols-box-3 {
+    background-image: url(explore-image-02.jpg);
+}
+
+.cols-box-4 {
+    background-color: rgb(249, 246, 246);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* social media */
+
+.social-media h3{
+    font-size: 44px;
+    text-align: center;
+}
+
+.social-media p {
+    color: rgb(183, 179, 179);
+    font-style: italic;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 40px;
+}
+
+.social-media .social-media-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+/* newsletter */
+
+.newsletter {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 100px;
+    margin: 64px 30px;
+}
+
+.newsletter .cols5 {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsletter .cols5 h5 {
+    font-size: 32px;
+    margin-left: 20px;
+}
+
+.newsletter .cols5 p {
+    color: rgb(152, 150, 147);
+    padding: 20px;
+    margin-right: 80px;
+}
+
+.newsletter .cols5 .form-text {
+    background-color: transparent;
+    height: 50px;
+}
+
+.newsletter .cols5 .form-text #Your-Name {
+    background-color: white;
+    height: 40px;
+    width: 300px;
+    border: 2px solid black;
+    padding: 15px;
+} 
+
+.newsletter .cols5 .form-text #email-address {
+    background-color: white;
+    height: 40px;
+    width: 300px;
+    border: 2px solid black;
+    padding: 15px;
+}
+
+.newsletter .cols5 .form-text .big-button {
+    background-color: white;
+    border: 2px solid black;
+    width: 40px;
+    height: 40px;
+}
+
+.newsletter .cols5 .form-text .big-button:hover {
+    background-color: rgb(66, 65, 66);
+}
+
+
+.newsletter .cols6 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+}
+
+.newsletter .cols6 h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.newsletter .cols6 p {
+    color: rgb(187, 181, 181);
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 75px;
+    background-color: #060606;
+    line-height: 1.7;
+}
+
+#footer h3 {
+    color: white;
+}
+
+#footer p,
+#footer a {
+    color: white;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    color:#088178;
+}
+
+#footer .about a {
+    display: block;
+    padding: 8px 0;
+}
+
+#footer .myaccount a {
+    display: block;
+    padding: 8px 0;
+}
+
+#footer .download img {
+    border: 1px solid #08817969;
+    border-radius: 7px;
+}
+
+
+@media (min-width: 360px) and (max-width: 952px) {
+    #header {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 80px;
+    }
+    .logo img {
+        padding-left: 60px;
+    }
+
+    .home-page {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 60px;
+    }
+    
+    .home-page .cols1 {
+        margin-left: 200px;
+    }
+
+    .home-page .cols2 {
+        height: 680px;
+        width: 700px;
+        margin-left: 250px;
+    }
+
+    .men-new-collections{
+        margin-left: 300px;
+    }
+
+    .women-new-collections {
+        margin-left: 300px;
+    }
+
+    .kids-new-collections {
+        margin-left: 300px;
+    }
+
+    .cols3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 300px;
+    }
+
+    .explore-products {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 60px;
+    }
+
+    .explore-products .our-products {
+        width: 1100px;
+    }
+
+    .explore-products .cols4 {
+        height: 550px;
+        width: 550px;
+        margin-left: 300px;
+    }
+
+    .social-media {
+        margin-left: 300px;
+    }
+
+    .newsletter {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 60px;
+    }
+
+    .newsletter .cols5 {
+        width: 1100px;
+    }
+
+    .newsletter .cols6 {
+        margin-left: 200px;
+        line-height: 1.7;
+    }
+
+    #footer {
+        width: 1250px;
+    }
+
+
+}
+    
